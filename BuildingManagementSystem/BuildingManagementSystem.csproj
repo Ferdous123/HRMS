@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42A71B3B-A50F-4F50-8C0C-407ADD3912B1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BuildingManagementSystem</RootNamespace>
+    <AssemblyName>BuildingManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDashBoard.Designer.cs">
+      <DependentUpon>ManagerDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerElectricBillEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerElectricBillEntry.Designer.cs">
+      <DependentUpon>ManagerElectricBillEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerElectricBillEntryBillingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerElectricBillEntryBillingHistory.Designer.cs">
+      <DependentUpon>ManagerElectricBillEntryBillingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerEmptyFlats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerEmptyFlats.Designer.cs">
+      <DependentUpon>ManagerEmptyFlats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerFlatFinencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerFlatFinencial.Designer.cs">
+      <DependentUpon>ManagerFlatFinencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerLog.Designer.cs">
+      <DependentUpon>ManagerLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerNotice.Designer.cs">
+      <DependentUpon>ManagerNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerOccupationHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerOccupationHistory.Designer.cs">
+      <DependentUpon>ManagerOccupationHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerPaymentDetails.Designer.cs">
+      <DependentUpon>ManagerPaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerPaymentDetailsCashEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerPaymentDetailsCashEntry.Designer.cs">
+      <DependentUpon>ManagerPaymentDetailsCashEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerTenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerTenants.Designer.cs">
+      <DependentUpon>ManagerTenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerTenantsAddTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerTenantsAddTenant.Designer.cs">
+      <DependentUpon>ManagerTenantsAddTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerTotalDues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerTotalDues.Designer.cs">
+      <DependentUpon>ManagerTotalDues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerDashboard.Designer.cs">
+      <DependentUpon>OwnerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerElectricBillEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerElectricBillEntry.Designer.cs">
+      <DependentUpon>OwnerElectricBillEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerElectricBillEntryBillingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerElectricBillEntryBillingHistory.Designer.cs">
+      <DependentUpon>OwnerElectricBillEntryBillingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerFlatFinencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerFlatFinencial.Designer.cs">
+      <DependentUpon>OwnerFlatFinencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerLogs.Designer.cs">
+      <DependentUpon>OwnerLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerManager.Designer.cs">
+      <DependentUpon>OwnerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerManagerAddMenager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerManagerAddMenager.Designer.cs">
+      <DependentUpon>OwnerManagerAddMenager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerNotice.Designer.cs">
+      <DependentUpon>OwnerNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerOccupiedFlats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerOccupiedFlats.Designer.cs">
+      <DependentUpon>OwnerOccupiedFlats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerProfileManageFlats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerProfileManageFlats.Designer.cs">
+      <DependentUpon>OwnerProfileManageFlats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerProfileManageHouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerProfileManageHouses.Designer.cs">
+      <DependentUpon>OwnerProfileManageHouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerProfileManageHousesAddHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerProfileManageHousesAddHouse.Designer.cs">
+      <DependentUpon>OwnerProfileManageHousesAddHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerProfileManageHousesAddHousesAddFlats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerProfileManageHousesAddHousesAddFlats.Designer.cs">
+      <DependentUpon>OwnerProfileManageHousesAddHousesAddFlats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerRecivedPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerRecivedPayment.Designer.cs">
+      <DependentUpon>OwnerRecivedPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerRecivedPaymentCashEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerRecivedPaymentCashEntry.Designer.cs">
+      <DependentUpon>OwnerRecivedPaymentCashEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerTenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerTenants.Designer.cs">
+      <DependentUpon>OwnerTenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerTenantsAddTenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerTenantsAddTenants.Designer.cs">
+      <DependentUpon>OwnerTenantsAddTenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TenantDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantDashBoard.Designer.cs">
+      <DependentUpon>TenantDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantElectricBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantElectricBillDetails.Designer.cs">
+      <DependentUpon>TenantElectricBillDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantNotice.Designer.cs">
+      <DependentUpon>TenantNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantPayment.Designer.cs">
+      <DependentUpon>TenantPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantPaymentDetails.Designer.cs">
+      <DependentUpon>TenantPaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantTotalFlatRented.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantTotalFlatRented.Designer.cs">
+      <DependentUpon>TenantTotalFlatRented.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerDashBoard.resx">
+      <DependentUpon>ManagerDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerElectricBillEntry.resx">
+      <DependentUpon>ManagerElectricBillEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerElectricBillEntryBillingHistory.resx">
+      <DependentUpon>ManagerElectricBillEntryBillingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerEmptyFlats.resx">
+      <DependentUpon>ManagerEmptyFlats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerFlatFinencial.resx">
+      <DependentUpon>ManagerFlatFinencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLog.resx">
+      <DependentUpon>ManagerLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerNotice.resx">
+      <DependentUpon>ManagerNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerOccupationHistory.resx">
+      <DependentUpon>ManagerOccupationHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerPaymentDetails.resx">
+      <DependentUpon>ManagerPaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerPaymentDetailsCashEntry.resx">
+      <DependentUpon>ManagerPaymentDetailsCashEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerTenants.resx">
+      <DependentUpon>ManagerTenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerTenantsAddTenant.resx">
+      <DependentUpon>ManagerTenantsAddTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerTotalDues.resx">
+      <DependentUpon>ManagerTotalDues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerDashboard.resx">
+      <DependentUpon>OwnerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerElectricBillEntry.resx">
+      <DependentUpon>OwnerElectricBillEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerElectricBillEntryBillingHistory.resx">
+      <DependentUpon>OwnerElectricBillEntryBillingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerFlatFinencial.resx">
+      <DependentUpon>OwnerFlatFinencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerLogs.resx">
+      <DependentUpon>OwnerLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerManager.resx">
+      <DependentUpon>OwnerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerManagerAddMenager.resx">
+      <DependentUpon>OwnerManagerAddMenager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerNotice.resx">
+      <DependentUpon>OwnerNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerOccupiedFlats.resx">
+      <DependentUpon>OwnerOccupiedFlats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerProfileManageFlats.resx">
+      <DependentUpon>OwnerProfileManageFlats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerProfileManageHouses.resx">
+      <DependentUpon>OwnerProfileManageHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerProfileManageHousesAddHouse.resx">
+      <DependentUpon>OwnerProfileManageHousesAddHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerProfileManageHousesAddHousesAddFlats.resx">
+      <DependentUpon>OwnerProfileManageHousesAddHousesAddFlats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerRecivedPayment.resx">
+      <DependentUpon>OwnerRecivedPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerRecivedPaymentCashEntry.resx">
+      <DependentUpon>OwnerRecivedPaymentCashEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerTenants.resx">
+      <DependentUpon>OwnerTenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerTenantsAddTenants.resx">
+      <DependentUpon>OwnerTenantsAddTenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantDashBoard.resx">
+      <DependentUpon>TenantDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantElectricBillDetails.resx">
+      <DependentUpon>TenantElectricBillDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantNotice.resx">
+      <DependentUpon>TenantNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantPayment.resx">
+      <DependentUpon>TenantPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantPaymentDetails.resx">
+      <DependentUpon>TenantPaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantTotalFlatRented.resx">
+      <DependentUpon>TenantTotalFlatRented.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconOrImages\house.png" />
+    <Content Include="IconOrImages\person.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 095536.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 095910.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 095953.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 100402.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 100441.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 100509.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 100552.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 100907.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 101215.png" />
+    <Content Include="IconOrImages\Screenshot 2025-02-05 101324.png" />
+    <None Include="IconOrImages\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
